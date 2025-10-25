@@ -130,8 +130,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      {/* Footer */}
+  {/*
       <footer className="border-t border-gray-200 mt-16">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <p className="text-gray-500 text-sm">
@@ -139,6 +138,7 @@ export default function Home() {
           </p>
         </div>
       </footer>
+  */}
     </main>
   );
 }
