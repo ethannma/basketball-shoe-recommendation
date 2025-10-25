@@ -1,0 +1,1 @@
+from app.schemas.shoe import Shoe, ShoeCreate, ShoeUpdate
