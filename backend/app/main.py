@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.endpoints import shoes
+from app.api.endpoints import shoes_endpoints, reviews_endpoints
 
 app = FastAPI(title="Basketball Shoe Recommendation API")
 
@@ -14,7 +14,8 @@ app.add_middleware(
 )
 
 # Include routers
-app.include_router(shoes.router, prefix="/api/shoes", tags=["shoes"])
+app.include_router(shoes_endpoints.router, prefix="/api/shoes", tags=["shoes"])
+app.include_router(reviews_endpoints.router, prefix="/api/reviews", tags=["reviews"])
 
 @app.get("/")
 def read_root():

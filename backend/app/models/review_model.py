@@ -27,5 +27,9 @@ class Review(Base):
     # Date for review
     created_at = Column(DateTime, default=datetime.utcnow)
     
+    # Voting system
+    upvotes = Column(Integer, default=0)
+    downvotes = Column(Integer, default=0)
+    
     # Links shoes with reviews
     shoe = relationship("Shoe", backref="reviews")

@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import List
 
 from app.db.session import get_db
-from app.models.shoe import Shoe as ShoeModel
+from app.models.shoe_model import Shoe as ShoeModel
 from app.schemas.shoe import Shoe, ShoeCreate, ShoeUpdate
 
 router = APIRouter()
